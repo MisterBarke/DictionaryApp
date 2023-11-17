@@ -52,21 +52,3 @@ function playSound() {
     console.log('played');
     sound.play()
 }
-
-
-/* <div class="wordMeanings">
-<div class="content">
-<ul>                    
-    <h2>Definition</h2>
-    ${definitionsHTML}
-</ul>
-
-<ul>
-  
-    <h2>phonetic</h2>
-    
-    <li id="wordAnt">${wordData.phonetic}</li>
-</ul>
-<i class="bi bi-ear"></i>
-</div>
-</div> */
