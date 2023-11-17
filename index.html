@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+    /*     .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #word{
+        height: 3rem;
+        width: 15rem;
+        color: blue;
+    }
+    .wordMeanings{
+      height: 65vh;
+      width: 80%;
+      background-color: black;
+      margin: auto;
+      color: white;
+      margin-left: 0.5rem;
+     padding: 12px;
+  
+    }
+    li{
+        list-style-type: none;
+        color: orangered;
+        font-size: 20px;
+    }
+    i{
+        font-size: 40px;
+        text-align: center;
+    }
+    .bar{
+        height: 30%;
+        width: 3px;
+        background-color: orangered;
+        position: absolute;
+        left: 3rem;
+    }
+    .hearPron{
+        display: flex;
+        justify-content: flex-end;
+        font-size: 38px;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 65vh;
+        
+    }
+    .theWord{
+        font-size: 30px;
+        text-align: center;
+        font-weight: bolder;
+        color: orangered;
+    } */
+    .allContent {
+        height: 25rem;
+        width: 100%;
+        background-color: antiquewhite;
+        overflow-y: scroll;
+    }
+
+    .formContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: -20%;
+    }
+
+    #word {
+        border: none;
+        border-bottom: 2px solid orangered;
+        background-color: transparent;
+        height: 2rem;
+        width: 150%;
+    }
+
+    ::placeholder {
+        color: orangered;
+        text-align: center;
+        font-weight: bolder;
+        font-size: large;
+        font-family: 'Courgette', cursive;
+    }
+    .meaningsContainer{
+        margin-left: 2rem;
+    }
+    .theWord{
+        font-size: 30px;
+        color: orangered;
+        font-family: 'Courgette', cursive;
+    }
+    .phonetic{
+        font-size: 20px;
+    }
+    .meanings{
+        font-size: 20px;
+        font-family: 'Courgette', cursive;
+    }
+    .wordAndPhonetic{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    i{
+        font-size: 35px;
+        margin-left: 2rem;
+       color: orangered;
+    }
+#word:focus{
+  outline-color: orangered;
+}
+.eg{
+    color: orangered;
+}
+#soundPlay{
+    cursor: pointer;
+}
+.error{
+    text-align: center;
+    font-size: 25px;
+    color: orangered;
+}
+button{
+    background-color: transparent;
+    border: none;
+}
+</style>
+
+<body>
+    <h1 style="text-align: center;  font-family: 'Courgette', cursive;">My Dictionary</h1>
+
+    <div class="theWord"></div>
+    <section class="allContent">
+        <div class="formContainer">
+            <form action="" id="form">
+                <input type="text" id="word" class="word" placeholder="Hi! What d'ya wanna learn?">
+            </form>
+        </div><br><br>
+        <div class="contents">
+
+        </div>
+        <audio id="sound"></audio>
+    </section>
+<script src="news.js"></script>
+</body>
+
+</html>
