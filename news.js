@@ -27,7 +27,7 @@ form.addEventListener('submit', (e)=>{
             <div class="wordAndPhonetic">
                 <div>
             <h2 class="theWord">${wordData.word}</h2>
-            <span class="phonetic">${wordData.phonetic}</span><br><br><br>
+            <span class="phonetic">${wordData.phonetic ? wordData.phonetic : 'No phonetic found'}</span><br><br><br>
         </div>
         <div><button onclick="playSound()"><i class="fa-solid fa-volume-high"></i></button></div>
         </div>
