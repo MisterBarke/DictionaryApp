@@ -41,9 +41,9 @@ form.addEventListener('submit', (e)=>{
         console.log(sound);
         }
         
-    })).catch(() => {
+    }))/* .catch(() => {
         allContent.innerHTML = `<h3 class="error">Couldn't Find The Word</h3>`;
-    });;
+    });; */
 })
    
 })
