@@ -141,10 +141,34 @@ button{
         font-family: 'Courgette', cursive;
         margin-left: 30%;
 }
+.goToTranslator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: beige;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+
+}
+.bi-go-to{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -0.4rem;
+}
+a{
+    text-decoration: none;
+}
+.goTo{
+  font-size: larger;
+  font-weight: bold;
+}
 </style>
 
 <body>
-    <h1 style="text-align: center;  font-family: 'Courgette', cursive;">My Dictionary</h1>
+    <h1 style="text-align: center;  font-family: 'Courgette', cursive;">My Dictionary</h1><br>
+    <div class="goToTranslator"><a href="translator.html"><i class="bi-go-to bi-arrow-right"></i></a></div><span class="goTo">Go to Translator</span><br><br>
 
     <div class="theWord"></div>
     <section class="allContent">

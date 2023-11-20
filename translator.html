@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+
+</head>
+<style>
+    .CopyIcon{
+        display: flex;
+        justify-content: flex-end;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    button{
+        background-color: transparent;
+        border: none;
+    }
+    .bi{
+        font-size: 25px;
+    }
+    #floatingTextarea2{
+        background-color: transparent;
+        border: none;
+        resize: vertical;
+      
+        
+    }
+    #floatingTextarea{
+        background-color: transparent;
+        border: none;
+        resize: vertical;
+  
+    }
+    #floatingTextarea2:focus{
+        outline-color: transparent !important;
+    }
+    .iconArrowDiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    select{
+        border: none;
+        background-color: transparent;
+        -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+    font-size: 17px;
+    }
+    select:focus{
+        outline-color: transparent;
+    }
+    .lang1, .lang2, .language, .language2{
+        font-weight: bolder;
+    }
+    .copiedAlert, .copiedAlert2{
+        background-color: azure;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+    .goToTranslator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: beige;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+
+}
+.bi-go-to{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -0.4rem;
+    font-size: 30px;
+}
+a{
+    text-decoration: none;
+}
+.goTo{
+  font-size: larger;
+  font-weight: bold;
+}
+   
+</style>
+<body>
+    <section class="container">
+        <div class="goToTranslator"><a href="index.html"><i class="bi-go-to bi-arrow-left"></i></a></div><span class="goTo">Go to Dictionary</span><br><br>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 g-2 g-lg-3">
+
+              <div class="col">
+                <div class="p-3 border bg-light">
+                    <div class="lang">
+                        <h6 class="lang1">French</h6>
+                    </div><br>
+                    <div class="form-floating translateFrom">
+                        <form action="" id="submitToTranslate">
+                        <textarea class="form-control" placeholder="Type here" id="floatingTextarea2" ></textarea>
+                    </form>
+                    </div><br><br>
+                    <div class="CopyIcon">
+                        <div class="copiedAlert">Copied to clipboard</div>
+                       <button id="copyToTranslate"><i class="bi bi-copy"></i></button>
+                    </div>
+                </div>
+              </div>
+              
+              <div class="col">
+                <div class="p-3 border bg-light">
+                    <div class="lang">
+                        <h6 class="lang2">English</h6>
+                    </div><br>
+                    <div class="form-floating textTranslated">
+                        <textarea class="form-control" id="floatingTextarea"></textarea>
+                      </div><br><br>
+                    <div class="CopyIcon">
+                        <div class="copiedAlert2">Copied to clipboard</div>
+                        <button id="copyTranslated"><i class="bi bi-copy"></i></button>
+                    </div>
+                </div>
+              </div>
+
+            </div><br>
+            <div class="row row-cols-3 g-2 g-lg-3">
+                <div class="col">
+                    <div class="p-3 border bg-light">
+                      
+                            <span class="language">French</span>
+                     
+                    </div>
+                  </div>
+                <div class="col">
+                    <div class="p-2 border bg-light iconArrowDiv">
+                        <button id="changeLangArrow"><i class="bi bi-arrow-left-right"></i></button>
+                    </div>
+                  </div>
+                <div class="col">
+                    <div class="p-3 border bg-light">
+                     
+                            <span class="language2">English</span>
+                      
+                    </div>
+                  </div>
+            </div>
+          </div>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="translator.js"></script>
+</body>
+</html>

@@ -17,7 +17,7 @@ form.addEventListener('submit', (e)=>{
             for (let definition of wordData.meanings[0].definitions) {
                 // Ajouter chaque définition à la variable definitionsHTML
                 definitionsHTML += `<li>${definition.definition}</li><br>
-                <li class="eg">${definition.example? definition.example : 'No example for this one'}</li>
+                <li class="eg">${definition.example || 'No example for this one'}</li>
                 <br>`;
 
             }
